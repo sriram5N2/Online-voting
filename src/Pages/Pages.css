@@ -1,0 +1,149 @@
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.page {
+    width: 78vw;
+    border: 1px solid green;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-applogo-container {
+    padding: 5px;
+    margin: 5px;
+}
+.intro-content {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 50%;
+    padding: 5px;
+    position: relative;
+    bottom: 40px;
+}
+.continue-btn {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.otp-field-box {
+    padding-top: 5px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    /* background-color: red; */
+}
+.otp-caption {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    white-space: nowrap;
+    padding: 0px 8px;
+    position: relative;
+    bottom: 5px;
+}
+.otp-button-box {
+    display: inline-flex !important;
+    width: 104px !important;
+}
+.send-otp-button {
+    width: 100% !important;
+}
+.auth-btn {
+    justify-content: space-between;
+}
+.vote-btn {
+    justify-content: center;
+}
+.auth,
+.vote {
+    width: 60%;
+    max-width: 400px;
+}
+.candidates-list {
+    padding: 15px 25px;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+.loader-container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.card-footer,
+.results-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logout-button {
+    animation: zoom-in-out 1s ease-in infinite !important;
+}
+.candidate-box {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.result {
+    width: 90%;
+}
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.results-heading {
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.candidate {
+    padding: 7px 2px;
+}
+.results-box {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
