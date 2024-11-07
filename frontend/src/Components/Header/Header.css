@@ -1,0 +1,22 @@
+.header {
+    margin: 5px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stepper {
+    width: 80vw;
+}
+.app-heading {
+    font-weight: 900;
+    font-size: 24px;
+    font-family: serif;
+    padding: 1px;
+    border-bottom: 4px solid rgb(0, 158, 0);
+    border-radius: 2px;
+    margin: 3px;
+    margin-bottom: 8px;
+}
