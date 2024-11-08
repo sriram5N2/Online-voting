@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 app.use(
     cors({
-        origin: ["https://vote-easy.vercel.app", "http://localhost:3000"],
+        origin: ["https://online-voitng.vercel.app", "http://localhost:3000"],
     })
 );
 
