@@ -139,7 +139,7 @@ export const handleError = (error, toast) => {
     console.log(error);
     const errorHtml = error.response.data;
     const errorBodyStart = errorHtml.indexOf("<body>");
-    const errorBodyEnd = errorHtml.indexOf("<pre>");
+    const errorBodyEnd = errorHtml.indexOf("ERROR");
     const errorMessage = errorHtml.substring(errorBodyStart + 12, errorBodyEnd);
     toast({
         title: errorMessage,
